@@ -2,10 +2,10 @@
 # description attributes.
 
 class Room:
-  def __init__(self, name, items, desc):
+  def __init__(self, name, desc, items):
     self._name = name
-    self._items = items
     self._desc = desc
+    self._items = items
 
   def __str__(self):
     return f"Room: {self._name}\nContained Items: {self._items}\nDescription of the Room: {self._desc}"
